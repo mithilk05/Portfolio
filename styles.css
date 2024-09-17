@@ -1,0 +1,116 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier', monospace; /* Changed font to Courier */
+    color: #000; /* Black text */
+    background-color: #d3d3d3; /* Grey background */
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #001f3f; /* Navy blue */
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #000; /* Black hover effect */
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Header styling */
+header {
+    background-color: #001f3f; /* Navy blue background for header */
+    color: white;
+    padding: 20px 0; /* Reduced padding to move it closer to the top */
+    text-align: center;
+    position: absolute;
+    top: 40px; /* Adjusted to move header up */
+    width: 100%;
+    z-index: 999;
+}
+
+header h1 {
+    font-size: 3.5em; /* Slightly smaller font for balance */
+    color: #fff; /* White header text */
+    margin: 0;
+}
+
+/* Sections */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3; /* Grey background */
+    padding-top: 60px; /* Added padding to adjust for the moved header */
+}
+
+.section:nth-child(even) {
+    background-color: #b0b0b0; /* Slightly darker grey for alternating sections */
+}
+
+.banner {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 3em;
+    color: #001f3f; /* Navy blue headings */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+    color: #000; /* Black text */
+}
+
+/* Placeholder for the image section */
+.placeholder-image {
+    width: 100%;
+    height: 300px;
+    background-color: #666; /* Grey placeholder for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text inside the placeholder */
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.large-image {
+    width: 500px;
+    height: auto;
+}
+
